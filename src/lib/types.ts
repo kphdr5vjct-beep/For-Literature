@@ -8,7 +8,7 @@ export interface CFP {
   url: string; description: string; tags: string[];
   type: "journal" | "conference" | "volume" | "other";
   topic?: string;
-  source: "manual" | "feed";
+  source?: "manual" | "feed";
 }
 export interface Resource {
   id: string; title: string; url: string; description: string;
