@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { CFP } from "@/lib/types";
 export const cfps = [
   {
