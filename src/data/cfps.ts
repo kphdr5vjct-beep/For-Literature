@@ -1,5 +1,5 @@
 import { CFP } from "@/lib/types";
-export const cfps: CFP[] = [
+export const cfps = [
   {
     id: "1", title: "Ecology and the Victorian Novel",
     organizer: "Victorian Literature and Culture",
