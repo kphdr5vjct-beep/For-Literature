@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-family-serif: "Cormorant Garamond", Georgia, serif;
+  --font-family-sans: "Inter", system-ui, sans-serif;
+  --color-cream-50: #fdfcf8;
+  --color-cream-100: #faf7f0;
+  --color-cream-200: #f4ede0;
+  --color-ink-700: #3d3830;
+  --color-ink-800: #2c2820;
+  --color-ink-900: #1a1814;
+  --color-forest-700: #2d5a3d;
+  --color-forest-800: #1e3d29;
+  --color-gold-400: #c9a84c;
+  --color-gold-500: #b8932a;
+}
+
+@layer base {
+  html { background-color: var(--color-cream-100); color: var(--color-ink-800); }
+  h1, h2, h3, h4 { font-family: var(--font-family-serif); font-weight: 500; line-height: 1.2; }
+}
+
+@layer components {
+  .nav-link { font-size: 0.875rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; color: var(--color-ink-700); transition: color 0.2s; }
+  .nav-link:hover { color: var(--color-forest-700); }
+  .section-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-forest-700); }
+  .card { background: white; border: 1px solid var(--color-cream-200); border-radius: 2px; transition: box-shadow 0.2s; }
+  .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .tag { display: inline-block; font-size: 0.75rem; padding: 0.125rem 0.5rem; border-radius: 2px; font-weight: 500; }
+  .btn-primary { display: inline-block; background-color: var(--color-forest-700); color: var(--color-cream-50); font-size: 0.875rem; padding: 0.625rem 1.25rem; border-radius: 2px; transition: background-color 0.2s; text-decoration: none; }
+  .btn-primary:hover { background-color: var(--color-forest-800); }
+  .btn-outline { display: inline-block; border: 1px solid var(--color-forest-700); color: var(--color-forest-700); font-size: 0.875rem; padding: 0.625rem 1.25rem; border-radius: 2px; transition: all 0.2s; text-decoration: none; }
+  .btn-outline:hover { background-color: var(--color-forest-700); color: var(--color-cream-50); }
+  .divider { border-top: 1px solid var(--color-cream-200); }
+}
